@@ -27,6 +27,6 @@ func main() {
 
 func usage() {
 	//fmt.Fprintf(os.Stderr, "Usage of %s: [-p port] dir_to_serve\n", os.Args[0])
-	fmt.Fprintf("hello world! ._. \n")
+	fmt.print("hello world! ._. \n")
 	flag.PrintDefaults()
 }
