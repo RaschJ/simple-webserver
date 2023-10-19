@@ -5,7 +5,7 @@ description: |
   You can change the default port (8080) with the -p option, for instance:
   command: webserver -p 9001 www.
 grade: stable
-confinement: classic
+confinement: strict
 
 parts:
   testsnap03:
@@ -15,7 +15,7 @@ parts:
 
 apps:
     testsnap03:
-      command: bin/webserver
+      command: webserver www
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
