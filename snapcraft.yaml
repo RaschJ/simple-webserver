@@ -8,13 +8,13 @@ grade: stable
 confinement: strict
 
 parts:
-  testsnap03:
+  simple-webserver:
     source: .
     plugin: go
     go-importpath: github.com/ubuntu/simple-webserver-part
 
 apps:
-    testsnap03:
+    my-server:
       command: webserver www
       daemon: simple
       restart-condition: always
