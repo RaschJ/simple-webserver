@@ -1,5 +1,5 @@
-name: simple-webserver-part
-version: '1.0'
+name: testsnap03
+version: '4.0'
 summary: Snapcraft simple webserver part
 description: |
   In your snapcraft.yaml:
@@ -25,3 +25,10 @@ parts:
     source: .
     plugin: go
     go-importpath: github.com/ubuntu/simple-webserver-part
+
+apps:
+    my-server:
+      command: webserver www
+      daemon: simple
+      restart-condition: always
+      plugs: [network-bind]
