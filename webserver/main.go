@@ -20,7 +20,7 @@ func main() {
 	}
 
 	snapdir := os.Getenv("SNAP")
-	www := path.Join(snapdir, flag.Arg(0))
+	www := path.Join(snapdir, os.Getwd())
 	
 	panic(http.ListenAndServe(":"+*port, http.FileServer(http.Dir(www))))
 }
