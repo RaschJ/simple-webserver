@@ -15,7 +15,7 @@ parts:
 
 apps:
     testsnap03:
-      command: /bin/webserver
+      command: webserver
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
