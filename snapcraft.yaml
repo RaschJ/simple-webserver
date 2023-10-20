@@ -12,6 +12,7 @@ parts:
     source: .
     plugin: go
     go-importpath: github.com/ubuntu/simple-webserver-part
+    source: ./index.html
 
 apps:
     my-server:
