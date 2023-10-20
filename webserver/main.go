@@ -22,12 +22,12 @@ func main() {
 	snapdir := os.Getenv("SNAP")
 	www := path.Join(snapdir, "index.html")
 	
-	//panic(http.ListenAndServe(":"+*port, http.FileServer(http.Dir(www))))
-	
+	panic(http.ListenAndServe(":"+*port, http.FileServer(http.Dir(www))))
+	/*
  	panic(http.ListenAndServe(":"+*port, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "<h1>Hello World! ._.</h1>")
 	})))
-	
+	*/
 }
 
 func usage() {
