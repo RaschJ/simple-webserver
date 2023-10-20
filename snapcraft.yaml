@@ -11,7 +11,7 @@ parts:
   simple-webserver:
     source: .
     plugin: go
-    go-importpath: github.com/ubuntu/simple-webserver-part
+    go-importpath: github.com/RaschJ/simple-webserver
     source: ./index.html
 
 apps:
