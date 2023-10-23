@@ -8,14 +8,14 @@ grade: stable
 confinement: strict
 
 parts:
-  simple-webserver:
+  testsnap03:
     source: .
     plugin: go
     go-importpath: github.com/RaschJ/simple-webserver
     
 
 apps:
-    my-server:
+    testserver:
       command: webserver www
       daemon: simple
       restart-condition: always
