@@ -10,9 +10,8 @@ base: core22
 
 parts:
   testsnap03:
-    source: .
+    source: github.com/RaschJ/simple-webserver
     plugin: go
-    go-importpath: github.com/RaschJ/simple-webserver
     
 
 apps:
