@@ -17,7 +17,7 @@ parts:
 
 apps:
     testserver:
-      command: webserver www
+      command: bin/testserver
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
