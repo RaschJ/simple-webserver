@@ -6,18 +6,17 @@ description: |
   command: webserver -p 9001 www.
 grade: stable
 confinement: strict
-
-base: core20
+base: core22
 
 parts:
   testsnap03:
-    source: github.com/RaschJ/simple-webserver
-    source-type: git
+    plugin: go
+    source: https://github.com/RaschJ/simple-webserver.git
     
 
 apps:
     testserver:
-      command: usr/local/bin/testserver
+      command: bin/testserver
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
