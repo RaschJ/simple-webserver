@@ -8,8 +8,6 @@ grade: stable
 confinement: strict
 base: core22
 
-override-build: | craftctl default
-
 parts:
   testsnap03:
     source: https://github.com/RaschJ/simple-webserver.git
