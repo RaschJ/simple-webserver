@@ -10,7 +10,6 @@ base: core22
 
 parts:
   testsnap03:
-    plugin: go
     source: https://github.com/RaschJ/simple-webserver.git
     
 
