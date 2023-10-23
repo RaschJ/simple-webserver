@@ -11,9 +11,7 @@ base: core20
 
 parts:
   testsnap03:
-    source: .
-    plugin: go
-    go-importpath: github.com/RaschJ/simple-webserver
+    source: github.com/RaschJ/simple-webserver
     source-type: git
     
 
