@@ -7,6 +7,8 @@ description: |
 grade: stable
 confinement: strict
 
+base: core20
+
 parts:
   testsnap03:
     source: .
@@ -17,7 +19,7 @@ parts:
 
 apps:
     testserver:
-      command: testsnap03
+      command: usr/local/bin/testserver
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
