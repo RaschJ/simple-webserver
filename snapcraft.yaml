@@ -17,7 +17,7 @@ parts:
 
 apps:
     testserver:
-      command: testsnap03
+      #command: testsnap03
       daemon: simple
       restart-condition: always
       plugs: [network-bind]
