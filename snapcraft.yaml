@@ -8,7 +8,7 @@ grade: stable
 confinement: strict
 base: core22
 
-override-build: | craftctl default # WORKAROUND: Use python from search path, the path detected by meson doesn't exist when running the Snap sed -e '1c#!/usr/bin/env python3' -i "${CRAFT_PART_INSTALL}/usr/bin/<snap_name>"
+override-build: | craftctl default
 
 parts:
   testsnap03:
