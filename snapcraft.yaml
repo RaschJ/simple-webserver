@@ -12,6 +12,7 @@ parts:
   testsnap03:
     source: https://github.com/RaschJ/simple-webserver.git
     plugin: go
+    build-packages: [go]
     
 
 apps:
