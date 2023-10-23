@@ -12,7 +12,7 @@ parts:
     source: .
     plugin: go
     go-importpath: github.com/RaschJ/simple-webserver
-    source: ./index.html
+    
 
 apps:
     my-server:
